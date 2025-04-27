@@ -6,6 +6,7 @@
     <title>My Portfolio</title>
     <!-- Add Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -116,101 +117,109 @@
                 <button class="filter-btn" data-filter="app">App Development</button>
                 <button class="filter-btn" data-filter="other">Other</button>
             </div>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card glow-effect" data-category="web">
-                    <div class="project-image">
-                        <img src="/api/placeholder/400/200" alt="Project 1">
-                        <div class="project-overlay">
-                            <a href="#" class="btn">View Project</a>
+            <div class="swiper projects-slider">
+                <div class="swiper-wrapper">
+                    <!-- Project 1 -->
+                    <div class="swiper-slide project-card glow-effect" data-category="web">
+                        <div class="project-image">
+                            <img src="/api/placeholder/400/200" alt="Project 1">
+                            <div class="project-overlay">
+                                <a href="#" class="btn">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>E-commerce Website</h3>
+                            <p>A fully responsive e-commerce platform with product filtering and cart functionality.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">JavaScript</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-details">
-                        <h3>E-commerce Website</h3>
-                        <p>A fully responsive e-commerce platform with product filtering and cart functionality.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">HTML</span>
-                            <span class="project-tag">CSS</span>
-                            <span class="project-tag">JavaScript</span>
+                    
+                    <!-- Project 2 -->
+                    <div class="swiper-slide project-card glow-effect" data-category="app">
+                        <div class="project-image">
+                            <img src="/api/placeholder/400/200" alt="Project 2">
+                            <div class="project-overlay">
+                                <a href="#" class="btn">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Weather Dashboard</h3>
+                            <p>An interactive weather application showing forecasts and historical data.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">JavaScript</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Project 2 -->
-                <div class="project-card glow-effect" data-category="app">
-                    <div class="project-image">
-                        <img src="/api/placeholder/400/200" alt="Project 2">
-                        <div class="project-overlay">
-                            <a href="#" class="btn">View Project</a>
+                    
+                    <!-- Project 3 -->
+                    <div class="swiper-slide project-card glow-effect" data-category="other">
+                        <div class="project-image">
+                            <img src="/api/placeholder/400/200" alt="Project 3">
+                            <div class="project-overlay">
+                                <a href="#" class="btn">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Portfolio Design</h3>
+                            <p>A minimalist portfolio template for creative professionals.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">JavaScript</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-details">
-                        <h3>Weather Dashboard</h3>
-                        <p>An interactive weather application showing forecasts and historical data.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">HTML</span>
-                            <span class="project-tag">CSS</span>
-                            <span class="project-tag">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 3 -->
-                <div class="project-card glow-effect" data-category="other">
-                    <div class="project-image">
-                        <img src="/api/placeholder/400/200" alt="Project 3">
-                        <div class="project-overlay">
-                            <a href="#" class="btn">View Project</a>
-                        </div>
-                    </div>
-                    <div class="project-details">
-                        <h3>Portfolio Design</h3>
-                        <p>A minimalist portfolio template for creative professionals.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">HTML</span>
-                            <span class="project-tag">CSS</span>
-                            <span class="project-tag">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
                
-                <!-- Project 4 -->
-                <div class="project-card glow-effect" data-category="web">
-                    <div class="project-image">
-                        <img src="/api/placeholder/400/200" alt="Project 4">
-                        <div class="project-overlay">
-                            <a href="#" class="btn">View Project</a>
+                    <!-- Project 4 -->
+                    <div class="swiper-slide project-card glow-effect" data-category="web">
+                        <div class="project-image">
+                            <img src="/api/placeholder/400/200" alt="Project 4">
+                            <div class="project-overlay">
+                                <a href="#" class="btn">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>E-commerce Website</h3>
+                            <p>A fully responsive e-commerce platform with product filtering and cart functionality.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">JavaScript</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-details">
-                        <h3>E-commerce Website</h3>
-                        <p>A fully responsive e-commerce platform with product filtering and cart functionality.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">HTML</span>
-                            <span class="project-tag">CSS</span>
-                            <span class="project-tag">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Project 5 -->
-                <div class="project-card glow-effect" data-category="web">
-                    <div class="project-image">
-                        <img src="/api/placeholder/400/200" alt="Project 5">
-                        <div class="project-overlay">
-                            <a href="#" class="btn">View Project</a>
+                    <!-- Project 5 -->
+                    <div class="swiper-slide project-card glow-effect" data-category="web">
+                        <div class="project-image">
+                            <img src="/api/placeholder/400/200" alt="Project 5">
+                            <div class="project-overlay">
+                                <a href="#" class="btn">View Project</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-details">
-                        <h3>E-commerce Website</h3>
-                        <p>A fully responsive e-commerce platform with product filtering and cart functionality.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">HTML</span>
-                            <span class="project-tag">CSS</span>
-                            <span class="project-tag">JavaScript</span>
+                        <div class="project-details">
+                            <h3>E-commerce Website</h3>
+                            <p>A fully responsive e-commerce platform with product filtering and cart functionality.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">JavaScript</span>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- Add pagination -->
+                <div class="swiper-pagination"></div>
+                
+                <!-- Add navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
     </section>
@@ -265,6 +274,7 @@
     </footer>
 
     <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
