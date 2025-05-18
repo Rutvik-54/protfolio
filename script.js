@@ -182,9 +182,85 @@ document.addEventListener('mousemove', function(e) {
 });
 
 // Initialize page
+// Initialize AOS
+// Typing effect for hero section
+const typedTextSpan = document.querySelector('.typed-text');
+const textArray = ['Web Developer', 'UI/UX Designer', 'Frontend Developer', 'Creative Coder'];
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+    if (charIndex < textArray[textArrayIndex].length) {
+        typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, 100);
+    } else {
+        setTimeout(erase, 2000);
+    }
+}
+
+function erase() {
+    if (charIndex > 0) {
+        typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, 50);
+    } else {
+        textArrayIndex++;
+        if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+        setTimeout(type, 1000);
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
-    // Create particles
+    setTimeout(type, 1000);
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+    });
     createParticles();
+    
+    // Animate hero section
+    const heroContent = document.querySelector('.hero-content');
+    heroContent.setAttribute('data-aos', 'fade-up');
+    
+    // Animate about section
+    const aboutImage = document.querySelector('.about-image');
+    const aboutText = document.querySelector('.about-text');
+    aboutImage.setAttribute('data-aos', 'fade-right');
+    aboutText.setAttribute('data-aos', 'fade-left');
+    aboutText.setAttribute('data-aos-delay', '200');
+    
+    // Animate skill cards with staggered delay
+    const skillCards = document.querySelectorAll('.skill-card');
+    skillCards.forEach((card, index) => {
+        card.setAttribute('data-aos', 'flip-left');
+        card.setAttribute('data-aos-delay', (index * 100).toString());
+    });
+    
+    // Animate project filters and cards
+    const projectFilters = document.querySelector('.project-filters');
+    projectFilters.setAttribute('data-aos', 'fade-up');
+    
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach((card, index) => {
+        card.setAttribute('data-aos', 'zoom-in-up');
+        card.setAttribute('data-aos-delay', (index * 100).toString());
+    });
+    
+    // Animate contact section
+    const contactInfo = document.querySelector('.contact-info');
+    const contactForm = document.querySelector('.contact-form');
+    contactInfo.setAttribute('data-aos', 'fade-right');
+    contactForm.setAttribute('data-aos', 'fade-left');
+    contactForm.setAttribute('data-aos-delay', '200');
+    
+    // Animate section headings
+    const sectionHeadings = document.querySelectorAll('section h2');
+    sectionHeadings.forEach(heading => {
+        heading.setAttribute('data-aos', 'fade-down');
+    });
     
     // Add initial animation styles
     const sections = document.querySelectorAll('section:not(#hero)');
