@@ -7,6 +7,7 @@
     <!-- Add Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -40,10 +41,23 @@
     <!-- Hero Section -->
     <section id="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Rutvik Pawar</span></h1>
-                <p>Web Developer & Designer crafting beautiful digital experiences</p>
-                <a href="#projects" class="btn glow-effect">View My Work</a>
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="text-glow">Hi, I'm <span class="highlight">Rutvik Pawar</span></h1>
+                <div class="typed-container" data-aos="fade-up" data-aos-delay="300">
+                    <p>I'm a <span class="typed-text"></span></p>
+                </div>
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="600">
+                    Crafting beautiful digital experiences through code
+                </p>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="900">
+                    <a href="#projects" class="btn glow-effect">View My Work</a>
+                    <a href="#contact" class="btn btn-outline glow-effect">Contact Me</a>
+                </div>
+                <div class="scroll-down" data-aos="fade" data-aos-delay="1200">
+                    <a href="#about">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -51,12 +65,12 @@
     <!-- About Section -->
     <section id="about">
         <div class="container">
-            <h2 class="text-glow">About Me</h2>
+            <h2 class="text-glow" data-aos="fade-down">About Me</h2>
             <div class="about-content">
-                <div class="about-image glow-effect">
+                <div class="about-image glow-effect" data-aos="fade-right" data-aos-delay="200">
                     <img src="assets/my.jpg" alt="Profile Picture">
                 </div>
-                <div class="about-text">
+                <div class="about-text" data-aos="fade-left" data-aos-delay="400">
                     <p>Hello! I'm a passionate web developer with expertise in creating responsive and user-friendly websites. With a strong foundation in HTML, CSS, and JavaScript, I build clean, efficient, and maintainable code.</p>
                     <p>My journey in web development started back in [Year], and since then, I've worked on numerous projects that have helped me refine my skills and stay updated with the latest industry trends.</p>
                     <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities.</p>
@@ -69,37 +83,37 @@
     <!-- Skills Section -->
     <section id="skills">
         <div class="container">
-            <h2 class="text-glow">My Skills</h2>
+            <h2 class="text-glow" data-aos="fade-down">My Skills</h2>
             <div class="skills-container">
-                <div class="skill-card glow-effect">
+                <div class="skill-card glow-effect" data-aos="flip-left" data-aos-delay="100">
                     <i class="fa-brands fa-html5 skill-icon" style="color: #e34c26;"></i>
                     <div class="skill-name">HTML5</div>
                 </div>
-                <div class="skill-card glow-effect">
+                <div class="skill-card glow-effect" data-aos="flip-left" data-aos-delay="200">
                     <i class="fa-brands fa-css3-alt skill-icon" style="color: #2965f1;"></i>
                     <div class="skill-name">CSS3</div>
                 </div>
-                <div class="skill-card glow-effect">
+                <div class="skill-card glow-effect" data-aos="flip-left" data-aos-delay="300">
                     <i class="fa-brands fa-js skill-icon" style="color: #f0db4f;"></i>
                     <div class="skill-name">JavaScript</div>
                 </div>
-                <div class="skill-card glow-effect">
+                <div class="skill-card glow-effect" data-aos="flip-left" data-aos-delay="400">
                     <i class="fa-solid fa-mobile-screen-button skill-icon" style="color: #4CAF50;"></i>
                     <div class="skill-name">Responsive Design</div>
                 </div>
-                <div class="skill-card glow-effect">
+                <div class="skill-card glow-effect" data-aos="flip-left" data-aos-delay="500">
                     <i class="fa-brands fa-git-alt skill-icon" style="color: #F05032;"></i>
                     <div class="skill-name">Git</div>
                 </div>
-                <div class="skill-card glow-effect">
+                <div class="skill-card glow-effect" data-aos="flip-left" data-aos-delay="600">
                     <i class="fa-solid fa-pen-ruler skill-icon" style="color: #FF5722;"></i>
                     <div class="skill-name">UI/UX Design</div>
                 </div>
-                <div class="skill-card glow-effect">
+                <div class="skill-card glow-effect" data-aos="flip-left" data-aos-delay="700">
                     <i class="fa-brands fa-react skill-icon" style="color: #61DAFB;"></i>
                     <div class="skill-name">React</div>
                 </div>
-                <div class="skill-card glow-effect">
+                <div class="skill-card glow-effect" data-aos="flip-left" data-aos-delay="800">
                     <i class="fa-brands fa-node-js skill-icon" style="color: #3C873A;"></i>
                     <div class="skill-name">Node.js</div>
                 </div>
@@ -110,14 +124,14 @@
     <!-- Projects Section -->
     <section id="projects">
         <div class="container">
-            <h2 class="text-glow">My Projects</h2>
-            <div class="project-filters">
+            <h2 class="text-glow" data-aos="fade-down">My Projects</h2>
+            <div class="project-filters" data-aos="fade-up" data-aos-delay="200">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="web">Web Design</button>
                 <button class="filter-btn" data-filter="app">App Development</button>
                 <button class="filter-btn" data-filter="other">Other</button>
             </div>
-            <div class="swiper projects-slider">
+            <div class="swiper projects-slider" data-aos="fade-up" data-aos-delay="400">
                 <div class="swiper-wrapper">
                     <!-- Project 1 -->
                     <div class="swiper-slide project-card glow-effect" data-category="web">
@@ -227,15 +241,15 @@
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
-            <h2 class="text-glow">Get In Touch</h2>
+            <h2 class="text-glow" data-aos="fade-down">Get In Touch</h2>
             <div class="contact-container">
-                <div class="contact-info">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="200">
                     <h3>Contact Information</h3>
                     <p>Feel free to contact me for any project inquiries or just to say hello!</p>
                     <p><i class="fa-solid fa-envelope"></i> your.email@example.com</p>
                     <p><i class="fa-solid fa-location-dot"></i> Your City, Country</p>
                 </div>
-                <div class="contact-form">
+                <div class="contact-form" data-aos="fade-left" data-aos-delay="400">
                     <form id="contactForm">
                         <div class="form-group">
                             <label for="name">Name</label>
@@ -275,6 +289,7 @@
 
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
