@@ -2,7 +2,7 @@
 
 A responsive and interactive personal portfolio website with modern UI features, animations, and dark/light mode support.
 
-![Portfolio Preview](assets/my.jpg)
+![Portfolio Preview](assets/preview.jpg)
 
 ## Features
 
